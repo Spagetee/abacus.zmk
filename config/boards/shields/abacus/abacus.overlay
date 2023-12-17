@@ -49,8 +49,8 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                 RC(3,6)         RC(3,8) RC(3,9) 
     encoder: encoder {
         compatible = "alps,ec11";
         label = "ENCODER";
-        a-gpios = <&gpio1 01 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio1 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio1 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 07 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
         status = "okay";
     };
