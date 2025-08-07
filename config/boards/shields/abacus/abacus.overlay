@@ -73,24 +73,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                 RC(3,6)         RC(3,8) RC(3,9) 
     };
 };
 
-    side_band_behavior_triggers {
-    compatible = "zmk,kscan-sideband-behaviors";
-    kscan = <&wakeup_scan>;
-    auto-enable;
-    wakeup-source;
-
-    soft_off {
-        row = <2>;
-        column = <11>;
-        bindings = <&hw_soft_off>;
-    };
-};
-
-soft_off_wakers: soft_off_wakeup_sources {
-    compatible = "zmk,soft-off-wakeup-sources";
-    wakeup-sources = <&wakeup_scan>;
-};
-
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
