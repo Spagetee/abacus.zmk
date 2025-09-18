@@ -42,6 +42,11 @@
 
 / {
     chosen {
-        zmk,underglow = &led_strip;
+        zmk,battery = &vddh;
+    };
+
+    vddh: vddh {
+        compatible = "zmk,battery-nrf-vddh";
+        status = "okay";
     };
 };
