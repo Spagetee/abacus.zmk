@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,battery = &vbatt;
     };
 
     kscan0: kscan_0 {
@@ -82,4 +83,15 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                 RC(3,6)         RC(3,8) RC(3,9) 
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
     };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 2>;  // AIN2 = P0.04
+        output-ohms = <100000>;
+        full-ohms = <200000>;
+    };
+
+    adc {
+        status = "okay";
+};
 };
