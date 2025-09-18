@@ -84,11 +84,9 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                 RC(3,6)         RC(3,8) RC(3,9) 
         sensors = <&encoder>;
     };
 
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 2>;  // AIN2 = P0.04
-        output-ohms = <100000>;
-        full-ohms = <200000>;
+    vddh: vddh {
+        compatible = "zmk,battery-nrf-vddh";
+        status = "okay";
     };
 
     adc {
