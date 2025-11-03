@@ -15,7 +15,7 @@
 &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE                &mo 1         &mo 2      &kp LEFT  &kp DOWN       &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
         };
 
         layer1 {
