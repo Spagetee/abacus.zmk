@@ -1,6 +1,6 @@
 file_format: "1"
-id: abacus
-name: Abacus
+id: abacuszmk
+name: Abacuszmk
 type: shield
 url: https://github.com/nickolaij/Abacus_Rev2
 requires: [pro_micro]

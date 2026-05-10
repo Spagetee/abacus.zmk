@@ -1,0 +1,6 @@
+if SHIELD_ABACUSZMK
+
+config ZMK_KEYBOARD_NAME
+    default "Abacuszmk"
+
+endif
